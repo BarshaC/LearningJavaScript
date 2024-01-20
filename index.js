@@ -1,23 +1,48 @@
-let name = "Barsha";  //String 
-let age = "23"; //Number 
-let isApprovedToVote = true; //Boolean Can be true or false
-let firstName;  //if not defined, it is set to be undefined
-let lastName = null; // use null when explicitely clear the value of the variable
+let person1 = {
+  name: 'Barsha',
+  age: 23
+};
 
-//Primitive Value Types
-//Strings
-//Numbers
-//Booleans
-//undefined
-//null
+//Dot notation
+//The name of the person can be changed like this
+person1.name = "Nisha";
+
+//Bracket Notation
+let selectProperty = 'name';
+person1[selectProperty] = 'Meera';
+
+let person2 = {
+  name: "BChaudhary",
+  age : 14
+}
+
+//Function to check if the person can vote
+function canVote(person) {
+  return person.age >= 18;
+}
+
+if (canVote(person1)) {
+  console.log(person1.name + ' can vote.');
+} else {
+  console.log(person1.name, " cannot vote!");
+}
+
+if (canVote(person2)) {
+  console.log(person2.name + 'can vote.');
+} else {
+  console.log(person2.name, "cannot vote!");
+}
 
 
-//JavaScript is a dynamic language. 
-// A string is set but cannot be changed in static language. 
-//But in language like Javascript, the string can be changed while runtime. 
-// While runtime, the type of the variables would be determined. 
-// All the numbers are type number
-age = 23; 
-typeof(age);
-age = 23.0; 
-typeof(age);
+function greet(name) {
+  console.log("hello", name);
+}
+
+greet("Joy");
+
+//calculating square
+function square(number) {
+  return number * number;
+}
+
+console.log(square(23));
