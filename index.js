@@ -1,18 +1,23 @@
-//Comment : This is my first Javascript Code
-let firstName = 'Barsha'; 
-let lastName =  'Chaudhary';
-console.log(firstName, lastName);
+let name = "Barsha";  //String 
+let age = "23"; //Number 
+let isApprovedToVote = true; //Boolean Can be true or false
+let firstName;  //if not defined, it is set to be undefined
+let lastName = null; // use null when explicitely clear the value of the variable
 
-const interestRate = 0.3;
-interestRate = 1;
-console.log(interestRate);
+//Primitive Value Types
+//Strings
+//Numbers
+//Booleans
+//undefined
+//null
 
-//Cannot be a reserved keyword
-//Should be meaningful
-//Cannot start with a number (1name)
-//Cannot contain space or hyphen(-)
-//Generally camelcase is used for naming the variables
-//Are case-sensitive
 
-//const cannot be reassigned
-//Or use let so it can be reassigned
+//JavaScript is a dynamic language. 
+// A string is set but cannot be changed in static language. 
+//But in language like Javascript, the string can be changed while runtime. 
+// While runtime, the type of the variables would be determined. 
+// All the numbers are type number
+age = 23; 
+typeof(age);
+age = 23.0; 
+typeof(age);
